@@ -1,51 +1,102 @@
 # Ex.No:1(A) INTRODUCTION TO JAVA PROGRAMMING, DATA TYPES, VARIABLES AND OPERATORS
 
 ## QUESTION:
-Lovely has just started learning Java and is very excited about how to display messages on the screen. Her first mission is to understand how different types of print statements work:
+Lovely is training to become a logic wizard. She enters a gate that tests her understanding of logical conditions.
 
-System.out.print() → prints on the same line
+She is given two magical conditions:
 
-System.out.println() → prints and moves to the next line
+hasKey – whether she has the golden key (boolean)
 
-System.out.printf() → prints formatted output
+knowsPassword – whether she knows the secret password (boolean)
 
+The gate then evaluates her truthfulness using logical operators:
+
+<img width="390" height="134" alt="image" src="https://github.com/user-attachments/assets/0660b40a-98a0-47bd-9151-2abc1a08e17d" />
+
+Write a program that:
+
+Accepts two boolean inputs: hasKey and knowsPassword
+
+Displays the results of:
+
+hasKey && knowsPassword
+hasKey || knowsPassword
+!hasKey
+!knowsPassword
+**Input Format:**
+
+First line: true or false (hasKey)
+
+Second line: true or false (knowsPassword)
+
+**Output Format:**
+
+Access with AND: <true/false>
+
+Access with OR: <true/false>
+
+Does NOT have key: <true/false>
+
+Does NOT know password: <true/false>
 
 ## AIM:
-To write a Java program that demonstrates the use of variables, data types, operators, and different print statements (print, println, and printf).
+Aim:
+To write a Java program that reads two integer numbers from the user and performs basic arithmetic operations such as addition, subtraction, multiplication, division, and modulus, and displays the results.
+
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the required package java.util.* (optional).
-3.	Declare variables of different data types (int, float, char, String).
-4.	Perform simple arithmetic operations using operators.
-5.	Use System.out.print() to display output on the same line.
-6.	Use System.out.println() to display output on the next line.
-7.	Use System.out.printf() to print formatted output.
-8.	End the program.
+1. Start
+2. Create a Scanner object to read input from the user.
+3. Read two boolean values i and j from the user.
+4. Compute the following:
+       l1 = i && j → Logical AND of i and j
+   
+       l2 = i || j → Logical OR of i and j
+   
+       l3 = !i → Logical NOT of i
+   
+       l4 = !j → Logical NOT of j
+   
+5.Display the results:
+
+      "Access with AND: " + l1
+
+      "Access with OR: " + l2
+
+       "Does NOT have key: " + l3
+
+      "Does NOT know password: " + l4
+
+6. Stop
+
+
 
 ## PROGRAM:
  ```
-/*
+
 Program to implement variables and Operators using Java
 Developed by: Hemavathy S
-RegisterNumber: 212223230076
-*/
+RegisterNumber:  212223230076
+
 ```
 
 ## Sourcecode.java:
 ```
 import java.util.*;
-public class Main
-{
-    public static void main(String a[])
+public class Main{
+    public static void main(String[]args)
     {
         Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        int n=sc.nextInt();
-        float f=sc.nextFloat();
-        System.out.println("Hello, "+s);
-        System.out.println("You are "+n+" years old");
-        System.out.printf("Your favorite number is %.2f",f);
+        boolean i=sc.nextBoolean();
+        boolean j = sc.nextBoolean();
+        boolean l1=(i&&j);
+        boolean l2=(i||j);
+        boolean l3=(!i);
+        boolean l4=(!j);
+        System.out.println("Access with AND: "+l1);
+        System.out.println("Access with OR: "+l2);
+        System.out.println("Does NOT have key: "+l3);
+        System.out.println("Does NOT know password: "+l4);
     }
 }
 ```
@@ -53,13 +104,15 @@ public class Main
 
 
 
-
 ## OUTPUT:
-<img width="766" height="385" alt="Screenshot 2025-11-14 105812" src="https://github.com/user-attachments/assets/8ca3a2e4-e913-4c3f-a8bf-73827075ab57" />
+
+<img width="848" height="415" alt="image" src="https://github.com/user-attachments/assets/47e4fe9b-ed37-4b1f-a010-fd6bb9f111fb" />
+
 
 
 ## RESULT:
-Thus, the Java program demonstrating variables, data types, operators, and print statements was successfully executed.
+
+The program has been executed successfully and the desired output has been obtained.
 
 
 
